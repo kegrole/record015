@@ -1,0 +1,42 @@
+# detectlog demo rules
+#
+# Each rule:
+#   name         unique rule name
+#   dimension    event field used to aggregate hits (src_ip, dst, ...)
+#   window       sliding window length in seconds
+#   threshold    hits inside the window needed to confirm a bucket
+#   merge_window seconds within which follow-up hits merge into the open alert
+#   where        list of conditions; all must hold for a line to hit the rule
+rules:
+  - name: brute_force_login
+    dimension: src_ip
+    window: 300
+    threshold: 10
+    merge_window: 60
+    where:
+      - field: path
+        pattern: /login
+      - field: status
+        pattern: "^(401|403)$"
+
+  - name: sqli_tautology
+    dimension: src_ip
+    window: 300
+    threshold: 1
+    merge_window: 60
+    where:
+      - field: path
+        pattern: "' OR 1=1"
+
+  - name: unregistered_egress
+    dimension: dst
+    window: 300
+    threshold: 1
+    merge_window: 60
+    where:
+      - field: dst
+        not_in:
+          - 10.0.0.0/8
+          - 172.16.0.0/12
+          - 192.168.0.0/16
+

@@ -1,0 +1,90 @@
+2026-11-14T08:00:00Z src=192.168.1.10 method=GET path=/ status=200
+2026-11-14T08:00:12Z src=192.168.1.11 method=GET path=/index.html status=200
+2026-11-14T08:00:25Z src=10.0.0.21 method=GET path=/api/health status=200
+192.168.1.60 - - [14/Nov/2026:08:00:40 +0000] "GET /about HTTP/1.1" 200 732
+2026-11-14T08:00:55Z src=192.168.1.12 method=GET path=/static/app.js status=304
+2026-11-14T08:01:10Z src=192.168.1.10 method=POST path=/login status=200
+2026-11-14T08:01:30Z host=web01 proc=curl src=10.1.2.3 dst=10.0.0.8 action=connect
+2026-11-14T08:01:50Z src=192.168.1.13 method=GET path=/search?q=shoes status=200
+192.168.1.61 - - [14/Nov/2026:08:02:05 +0000] "GET /index.html HTTP/1.1" 200 811
+2026-11-14T08:02:20Z src=192.168.1.14 method=GET path=/ status=200
+2026-11-14T08:02:45Z src=192.168.1.10 method=POST path=/login status=401
+2026-11-14T08:03:05Z src=10.0.0.22 method=GET path=/api/health status=200
+2026-11-14T08:03:30Z src=192.168.1.10 method=POST path=/login status=401
+2026-11-14T08:03:55Z src=192.168.1.15 method=GET path=/about status=200
+2026-11-14T08:04:20Z src=192.168.1.10 method=POST path=/login status=401
+2026-11-14T08:04:45Z host=web01 proc=wget src=10.1.2.4 dst=192.168.5.5 action=connect
+2026-11-14T08:05:10Z src=192.168.1.16 method=GET path=/products status=200
+2026-11-14T08:05:35Z src=192.168.1.11 method=GET path=/static/site.css status=304
+2026-11-14T08:06:00Z src=192.168.1.17 method=GET path=/ status=200
+2026-11-14T08:06:30Z src=10.0.0.23 method=GET path=/api/health status=200
+2026-11-14T08:07:00Z src=192.168.1.18 method=GET path=/search?q=books status=200
+2026-11-14T08:07:30Z src=192.168.1.12 method=GET path=/static/logo.png status=200
+2026-11-14T08:08:00Z src=192.168.1.19 method=GET path=/ status=200
+2026-11-14T08:08:30Z src=192.168.1.20 method=GET path=/about status=200
+2026-11-14T08:09:00Z src=192.168.1.21 method=GET path=/index.html status=200
+2026-11-14T08:09:30Z src=10.0.0.24 method=GET path=/api/health status=200
+2026-11-14T08:10:00Z src=203.0.113.7 method=POST path=/login status=401
+2026-11-14T08:10:10Z src=192.168.1.22 method=GET path=/ status=200
+2026-11-14T08:10:25Z src=203.0.113.7 method=POST path=/login status=401
+2026-11-14T08:10:40Z src=192.168.1.23 method=GET path=/about status=200
+2026-11-14T08:10:50Z src=203.0.113.7 method=POST path=/login status=401
+2026-11-14T08:11:00Z src=192.168.1.10 method=GET path=/index.html status=200
+2026-11-14T08:11:15Z src=203.0.113.7 method=POST path=/login status=401
+2026-11-14T08:11:30Z src=192.168.1.24 method=GET path=/search?q=coffee status=200
+2026-11-14T08:11:40Z src=203.0.113.7 method=POST path=/login status=401
+2026-11-14T08:11:55Z src=192.168.1.25 method=GET path=/ status=200
+2026-11-14T08:12:05Z src=203.0.113.7 method=POST path=/login status=401
+2026-11-14T08:12:20Z host=web01 proc=curl src=10.1.2.3 dst=10.0.0.8 action=connect
+2026-11-14T08:12:30Z src=203.0.113.7 method=POST path=/login status=401
+2026-11-14T08:12:45Z src=192.168.1.26 method=GET path=/products status=200
+2026-11-14T08:12:55Z src=203.0.113.7 method=POST path=/login status=401
+2026-11-14T08:13:10Z src=192.168.1.27 method=GET path=/ status=200
+2026-11-14T08:13:20Z src=203.0.113.7 method=POST path=/login status=401
+2026-11-14T08:13:35Z src=192.168.1.28 method=GET path=/about status=200
+2026-11-14T08:13:45Z src=203.0.113.7 method=POST path=/login status=401
+2026-11-14T08:14:00Z src=192.168.1.29 method=GET path=/index.html status=200
+2026-11-14T08:14:10Z src=203.0.113.7 method=POST path=/login status=401
+2026-11-14T08:14:25Z src=192.168.1.30 method=GET path=/ status=200
+2026-11-14T08:14:35Z src=203.0.113.7 method=POST path=/login status=401
+2026-11-14T08:15:00Z src=192.168.1.31 method=GET path=/about status=200
+2026-11-14T08:16:10Z src=192.168.1.32 method=GET path=/ status=200
+2026-11-14T08:17:20Z src=10.0.0.25 method=GET path=/api/health status=200
+2026-11-14T08:19:00Z src=192.168.1.33 method=GET path=/products status=200
+2026-11-14T08:21:00Z src=192.168.1.34 method=GET path=/index.html status=200
+2026-11-14T08:24:00Z src=192.168.1.35 method=GET path=/search?q=tea status=200
+2026-11-14T08:27:00Z src=192.168.1.36 method=GET path=/ status=200
+2026-11-14T08:31:00Z host=web01 proc=curl src=10.1.2.3 dst=172.16.4.4 action=connect
+2026-11-14T08:35:00Z src=192.168.1.37 method=GET path=/about status=200
+2026-11-14T08:39:00Z src=192.168.1.38 method=GET path=/static/app.js status=304
+2026-11-14T08:44:00Z src=10.0.0.26 method=GET path=/api/health status=200
+2026-11-14T08:49:00Z src=192.168.1.39 method=GET path=/ status=200
+2026-11-14T08:54:00Z src=192.168.1.40 method=GET path=/index.html status=200
+2026-11-14T09:00:05Z src=192.168.1.41 method=GET path=/ status=200
+2026-11-14T09:00:10Z src=198.51.100.23 method=GET path="/search?q=' OR 1=1--" status=200
+2026-11-14T09:00:18Z src=192.168.1.42 method=GET path=/about status=200
+2026-11-14T09:00:25Z src=198.51.100.23 method=GET path="/items?id=7' OR 1=1--" status=200
+2026-11-14T09:00:33Z src=192.168.1.43 method=GET path=/products status=200
+2026-11-14T09:00:40Z src=198.51.100.23 method=GET path="/search?q=' OR 1=1--" status=200
+2026-11-14T09:01:00Z src=192.168.1.44 method=GET path=/ status=200
+2026-11-14T09:03:00Z src=10.0.0.27 method=GET path=/api/health status=200
+2026-11-14T09:06:00Z src=192.168.1.45 method=GET path=/search?q=news status=200
+2026-11-14T09:10:00Z src=192.168.1.46 method=GET path=/index.html status=200
+2026-11-14T09:14:00Z host=web01 proc=wget src=10.1.2.4 dst=10.0.0.9 action=connect
+2026-11-14T09:18:00Z src=192.168.1.47 method=GET path=/about status=200
+2026-11-14T09:22:00Z src=192.168.1.48 method=GET path=/ status=200
+2026-11-14T09:26:00Z src=192.168.1.49 method=GET path=/static/site.css status=200
+2026-11-14T09:29:30Z src=192.168.1.50 method=GET path=/index.html status=200
+2026-11-14T09:30:00Z host=web01 proc=curl src=10.1.2.3 dst=203.0.113.99 action=connect
+2026-11-14T09:30:12Z src=192.168.1.51 method=GET path=/ status=200
+2026-11-14T09:30:20Z host=web01 proc=curl src=10.1.2.3 dst=203.0.113.99 action=connect
+2026-11-14T09:30:33Z src=192.168.1.52 method=GET path=/about status=200
+2026-11-14T09:30:40Z host=web01 proc=curl src=10.1.2.3 dst=203.0.113.99 action=connect
+2026-11-14T09:30:52Z src=10.0.0.28 method=GET path=/api/health status=200
+2026-11-14T09:31:00Z host=web01 proc=curl src=10.1.2.3 dst=203.0.113.99 action=connect
+2026-11-14T09:31:20Z src=192.168.1.53 method=GET path=/products status=200
+2026-11-14T09:33:00Z src=192.168.1.54 method=GET path=/ status=200
+2026-11-14T09:36:00Z src=192.168.1.55 method=GET path=/search?q=docs status=200
+2026-11-14T09:40:00Z src=192.168.1.56 method=GET path=/index.html status=200
+2026-11-14T09:45:00Z src=192.168.1.57 method=GET path=/about status=200
+

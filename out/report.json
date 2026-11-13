@@ -1,0 +1,37 @@
+{
+  "summary": {
+    "lines_read": 90,
+    "lines_parsed": 89,
+    "matched": 22,
+    "alerts": 3
+  },
+  "alerts": [
+    {
+      "rule": "brute_force_login",
+      "dimension": "src_ip",
+      "key": "203.0.113.7",
+      "count": 12,
+      "first_seen": "2026-11-14T08:10:00Z",
+      "last_seen": "2026-11-14T08:14:35Z",
+      "sample": "2026-11-14T08:10:00Z src=203.0.113.7 method=POST path=/login status=401"
+    },
+    {
+      "rule": "sqli_tautology",
+      "dimension": "src_ip",
+      "key": "198.51.100.23",
+      "count": 3,
+      "first_seen": "2026-11-14T09:00:10Z",
+      "last_seen": "2026-11-14T09:00:40Z",
+      "sample": "2026-11-14T09:00:10Z src=198.51.100.23 method=GET path=\"/search?q=' OR 1=1--\" status=200"
+    },
+    {
+      "rule": "unregistered_egress",
+      "dimension": "dst",
+      "key": "203.0.113.99",
+      "count": 4,
+      "first_seen": "2026-11-14T09:30:00Z",
+      "last_seen": "2026-11-14T09:31:00Z",
+      "sample": "2026-11-14T09:30:00Z host=web01 proc=curl src=10.1.2.3 dst=203.0.113.99 action=connect"
+    }
+  ]
+}
